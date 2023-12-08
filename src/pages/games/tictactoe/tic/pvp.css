@@ -1,0 +1,53 @@
+
+.tictactoe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .game-title {
+    color:'white';
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    margin: 1px;
+    background-color: transparent;
+    border: 2px solid transparent; /* Set the initial border to transparent */
+    transition: border-color 0.3s; /* Smooth transition for the border color change */
+    /* Add any other styles you want for the squares */
+  }
+  
+  .square:hover,
+  .square:focus {
+    border-color: rgb(255, 254, 254); /* Change the border color to white on hover or when focused */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  
+  .square:hover {
+    border-color: rgb(255, 4, 4); /* Change the border color to white on hover */
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f20b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: #981f1f;
+  }
